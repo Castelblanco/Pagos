@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.titulo{
+    width: 75%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.titulo > h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+
+.pagos{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.articulos{
+    width: 40%;
+    padding: 10px 20px;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: #ccc;
+}
+
+.articulo{
+    display: flex;
+    margin-top: 30px;
+}
+
+.articulo > img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.articulo_info{
+    margin-left: 20px;
+}
+
+.precio{
+    margin-top: 10px;
+}
+
+.precio > b > span{
+    color: #090;
+    font-size: 18px;
+}
+
+.precio > p > span{
+    text-decoration: line-through;
+    color: #e00;
+}
+
+.cantidad{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin-top: 25px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 2px solid #888; 
+}
+
+.cantidad > div{
+    width: 20px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #bbb;
+    color: #666;
+}
+
+.calculo{
+    margin-top: 80px;
+}
+
+.calculo_total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-top: 2px solid #888;
+}
+
+.form{
+    width: 60%;
+    margin: 30px 0 0 60px;
+}
+
+.form > b{
+    display: none;
+}
+
+.datos > p >span{
+    font-size: 16px;
+}
+
+.datos_input{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    border: 2px solid #aaa;
+    border-radius: 15px;
+}
+
+.datos_input > img{
+    width: 35px;
+    margin-right: 10px;
+}
+
+.datos_input > input{
+    width: 100%;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+
+.datos_input > select{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.guarde{
+    display: flex;
+    margin-top: 30px;
+}
+
+.guarde > input{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.boton{
+    margin: 50px 0 0 90px;
+    width: 180px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #ea1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: #ea4;
+}
+
+footer{
+    text-align: center;
+    margin: 180px 0 20px 0;
+    color: #aaa;
+}
+
+@media screen and (max-width:910px) {
+
+    .titulo > b > span{
+        display: none;
+    }
+    
+    .pagos{
+        display: block;
+    }
+
+    .articulos{
+        width: 100%;
+    }
+
+    .form{
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .form > b{
+        display: block;
+        font-size: 20px;
+        margin: 60px 0 10px 0;
+    }
+}
+
+@media screen and (max-width:370px) {
+    
+    
+    .articulo > img{
+        width: 100px;
+        height: 100px;
+    }
+
+}
